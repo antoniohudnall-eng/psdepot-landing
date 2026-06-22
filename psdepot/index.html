@@ -27,6 +27,22 @@
         .contact { background: #003366; color: white; padding: 60px 30px; text-align: center; }
         .contact h2 { margin: 0 0 30px 0; }
         .contact-info { font-size: 20px; }
+        .phone-blink {
+            font-size: 32px;
+            font-weight: bold;
+            animation: blinkRGB 1.5s infinite;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        @keyframes blinkRGB {
+            0% { color: #ff0000; text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+            33% { color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; }
+            66% { color: #0000ff; text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff; }
+            100% { color: #ff0000; text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+        }
         .footer { background: #333; color: #999; padding: 20px; text-align: center; font-size: 12px; }
     </style>
 </head>
@@ -40,24 +56,24 @@
         <div class="hero">
             <h2>California's Trusted Industrial Supply Partner</h2>
             <p>50,000+ Products | Same-Day Shipping | Competitive Pricing</p>
-            <button class="cta">Get a Free Quote →</button>
+            <button class="cta" onclick="window.location.href='https://psdepot.com'">Get a Free Quote</button>
         </div>
         
         <div class="features">
             <div class="feature">
-                <h3>⚡ Fast Delivery</h3>
+                <h3>Fast Delivery</h3>
                 <p>Same-day shipping from California warehouses</p>
             </div>
             <div class="feature">
-                <h3>💰 Best Pricing</h3>
+                <h3>Best Pricing</h3>
                 <p>15-25% savings vs. typical vendors</p>
             </div>
             <div class="feature">
-                <h3>📞 Real People</h3>
+                <h3>Real People</h3>
                 <p>Dedicated account managers who answer</p>
             </div>
             <div class="feature">
-                <h3>✅ Quality</h3>
+                <h3>Quality</h3>
                 <p>50,000+ trusted brands in stock</p>
             </div>
         </div>
@@ -102,16 +118,16 @@
         <div class="contact">
             <h2>Ready to Partner?</h2>
             <div class="contact-info">
-                <p>📞 888-881-6834</p>
-                <p>✉️ info@psdepot.com</p>
-                <p>🌐 psdepot.com</p>
-                <p>⏰ Mon-Fri 7am-6pm PST</p>
+                <p><span class="phone-blink">888-881-6834</span></p>
+                <p><a href="mailto:info@psdepot.com" style="color: white;">info@psdepot.com</a></p>
+                <p><a href="https://psdepot.com" style="color: white;">psdepot.com</a></p>
+                <p>Mon-Fri 7am-6pm PST</p>
             </div>
         </div>
         
         <div class="footer">
             <p>Performance Supply Depot LLC | California | Nationwide</p>
-            <p>© 2026 Performance Supply Depot LLC. All rights reserved.</p>
+            <p>2026 Performance Supply Depot LLC. All rights reserved.</p>
         </div>
     </div>
 </body>
